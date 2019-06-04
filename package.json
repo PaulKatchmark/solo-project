@@ -5,7 +5,9 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "author": "Paul Katchmark",
   "license": "ISC",
@@ -24,6 +26,8 @@
     "font-awesome": "^4.7.0",
     "passport": "^0.3.2",
     "passport-local": "^1.0.0",
-    "pg": "^6.1.0"
-  }
+    "pg": "^6.1.0",
+    "snyk": "^1.88.0"
+  },
+  "snyk": true
 }
